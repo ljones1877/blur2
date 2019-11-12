@@ -6,15 +6,15 @@ class Image
 
   def output_image
     @image.each do |row|
-      puts row.join 
+    puts row.join 
     end
   end
   
   def blur_coords!
     blur_coords = []
     @image.each_with_index do |row, i|
-      row.each_with_index do |x, row_i|
-        blur_coords << [i, row_i] if x == 1
+    row.each_with_index do |x, row_i|
+    blur_coords << [i, row_i] if x == 1
     end
   end
   
